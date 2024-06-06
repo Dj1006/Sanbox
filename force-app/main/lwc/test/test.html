@@ -1,0 +1,19 @@
+<template>
+    <div class="slds-p-bottom_large slds-p-left_large" style="width:500px">
+        <lightning-record-edit-form object-api-name="Account" onsubmit={handleSubmit}>
+            <lightning-messages></lightning-messages>
+
+            <lightning-input-field field-name="Phone" value={accountphone} onchange={handlePhoneChange}></lightning-input-field>
+            <lightning-input-field field-name="FirstName" value={accountfname} onchange={handleNameChange}></lightning-input-field>
+            <br>
+            
+            <lightning-button
+                type="submit"
+                name="submit"
+                label="Create Account"
+                onclick={createaccount}
+            >
+            </lightning-button>
+        </lightning-record-edit-form>
+    </div>
+</template>
