@@ -1,0 +1,12 @@
+<template>
+<lightning-card title="Custom Picklist">        
+    <lightning-combobox name="Select" label="Selection Type" value={selectedValue}  options={options} onchange={handleChange}>        </lightning-combobox>    </lightning-card>
+    
+    <template if:true={isregister_practice}>
+    <c-registerapractice></c-registerapractice>
+</template>
+<template if:true={isregister_provider}>
+    <c-registeraprovider></c-registeraprovider>
+</template>
+    
+</template>
